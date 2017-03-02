@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. require 'rwda' in your tests(in hook if cucumber)
+
+2. Browser.new()
+
+3. Play with all APIs
 
 ## Development
 
