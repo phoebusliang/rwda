@@ -66,7 +66,7 @@ class Browser
     wait_for_response(request_route, 'get', '', lambda { |val| return val.to_json.include? 'true' })
   end
 
-  def open_app(device, bundle_id = 'com.rea-group.reapa.internal')
+  def open_app(device, bundle_id)
     app_body = {:desiredCapabilities => {:bundleId => bundle_id}}
     response = HTTParty.post(DEVICE_URL[device], :body => app_body.to_json)
     @url = DEVICE_URL[device]
